@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//sono una fregna
 
 //faccio inserire mantissa, segno ed esponente
 //calcolo l'esponente sottraendo 127
