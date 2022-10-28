@@ -12,49 +12,79 @@ public class OrariPullmanOr {
 		int min = in.nextInt();
 			
 		if (ora == 12 || ora == 13) {
+			
 		if (lin.equals("C") || lin.equals("c")) {		//MODIFICARE CON SWITCH
+			
 			if (min >= 60) {
-				System.out.println("Un'ora e' formata solo da 60 minuti, pirla :D");
+				
+				System.err.println("Un'ora e' formata solo da 60 minuti, pirla :D");			
 			}
 			else {
+				
 				if (ora == 12) { //orari con ora corrispondente a 12
+					
 					if (min < 12) {
-							System.out.println("Il prossimo pullman e' alle ore > 12:12");
+						
+							System.out.println("Il prossimo pullman e' alle ore > 12:12");							
 					}
+					
 					else if (min < 32 || min == 12) {
-							System.out.println("Il prossimo pullman e' alle ore > 12:32");
+						
+							System.out.println("Il prossimo pullman e' alle ore > 12:32");					
 					}
+					
 					else if (min < 52 || min == 32) {
-							System.out.println("Il prossimo pullman e' alle ore > 12:52");
+						
+							System.out.println("Il prossimo pullman e' alle ore > 12:52");							
 					}
+					
 					else if (min > 52 || min == 52) {
+						
 							System.out.println("Il prossimo pullman e' alle ore > 13:12");
 					}
+					
 				}	
 				if (ora == 13) { //orari con ora corrispondente a 13
+					
 					if (min < 12) {
-							System.out.println("Il prossimo pullman e' alle ore > 13:12");
+						
+							System.out.println("Il prossimo pullman e' alle ore > 13:12");							
 					}
+					
 					else if (min < 32 || min == 12) {
-							System.out.println("Il prossimo pullman e' alle ore > 13:32");
+						
+							System.out.println("Il prossimo pullman e' alle ore > 13:32");							
 					}
+					
 					else if (min < 52 || min == 32) {
-							System.out.println("Il prossimo pullman e' alle ore > 13:52");
+						
+							System.out.println("Il prossimo pullman e' alle ore > 13:52");							
 					}
+					
 				}
+				
 			}	
+			
 		}	
 		if (lin.equals("E") || lin.equals("e")) {		
+			
 			if (min >= 60) {
-				System.out.println("Un'ora e' formata solo da 60 minuti, pirla :D");
+				
+				System.err.println("Un'ora e' formata solo da 60 minuti, pirla :D");				
 			}
+			
 			else {
+				
 				if (ora == 12) { //orari con ora corrispondente a 12
+					
 					if (min < 13) {
+						
 							System.out.println("Il prossimo pullman e' alle ore > 12:13 ");
 					}
 					else if (min < 25 || min == 13) {
+						
 							System.out.println("Il prossimo pullman e' alle ore > 12:25");
+							
 					}
 					else if (min < 37 || min == 25) {
 							System.out.println("Il prossimo pullman e' alle ore > 12:37");
@@ -87,7 +117,7 @@ public class OrariPullmanOr {
 		}
 		}
 		else { 
-			System.out.println("Il pirla dello sviluppatore non ha messo tutti gli orari :D");	
+			System.err.println("Il pirla dello sviluppatore non ha messo tutti gli orari :D");	
 			}
 	}
 }
