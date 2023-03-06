@@ -24,3 +24,6 @@ hs_err_pid*
 
 # For the fucking macOS
 .DS_Store
+
+# Visual Studio Code
+.vscode/
