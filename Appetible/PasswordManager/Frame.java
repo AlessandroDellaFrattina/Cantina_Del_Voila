@@ -10,6 +10,9 @@ public class Frame extends JFrame implements ActionListener {
     final int WIDTH = 500;
     final int HEIGHT = 500;
 
+    public boolean login = false;
+    public boolean register = false;
+
     private final JTextField ipAddressField;
     private final JTextField portTextField;
     private final JTextField usernameFieldLogin;
@@ -240,10 +243,10 @@ public class Frame extends JFrame implements ActionListener {
         registerButton.setVisible(true);
 
         // Clears the text fields when going back
-        usernameFieldLogin.setText("");
+        /*usernameFieldLogin.setText("");
         passwordFieldLogin.setText("");
         usernameFieldRegister.setText("");
-        passwordFieldRegister.setText("");
+        passwordFieldRegister.setText("");*/
     }
 
     public String[] loginInfo() {
@@ -251,6 +254,8 @@ public class Frame extends JFrame implements ActionListener {
         String[] loginInfo = new String[2];
         loginInfo[0] = usernameFieldLogin.getText();
         loginInfo[1] = passwordFieldLogin.getText();
+        login = true;
+        register = false;
         return loginInfo;
     }
 
@@ -259,6 +264,8 @@ public class Frame extends JFrame implements ActionListener {
         String[] registerInfo = new String[2];
         registerInfo[0] = usernameFieldRegister.getText();
         registerInfo[1] = passwordFieldRegister.getText();
+        login = false;
+        register = true;
         return registerInfo;
     }
 }
